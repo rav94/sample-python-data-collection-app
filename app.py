@@ -12,7 +12,6 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         
-        columns = ['Table No','Name','Food 1','Food 2','Food 3','Timestamp']
         # Print the form data to the console 
         for key, value in request.form.items():
             print(f'{key}: {value}')
@@ -29,16 +28,5 @@ def index():
 
         output_path='test.csv'
         df.to_csv(output_path, mode='a', index=False, header=not os.path.exists(output_path))
-
-        
-
-
-
-
-
-
-
-
-        
 
     return render_template('questions.html')
