@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add the food item</h1>
+<form method="post">
+  <p><b>Table No:</b></p>
+    <div style="text-align: left;">
+        <input type="radio" id="table_1" name="table_no" value="Table 1">
+        <label for="table_1">Table 1</label><br>
+        <input type="radio" id="table_2" name="table_no" value="Table 2">
+        <label for="table_2">Table 2</label><br>
+        <input type="radio" id="table_3" name="table_no" value="Table 3">
+        <label for="table_3">Table 3</label><br>
+        <input type="radio" id="take_away" name="table_no" value="Table Away">
+        <label for="take_away">Take Away</label><br>
+    </div>
+  <br>
+  <p><b>Your Name:</b></p>
+  <input type="text" id="yourName" name="your_name" />
+  <br>
+  <p><b>Food 1:</b></p>
+  <input type="text" id="food1" name="food_1" />
+  <br>
+  <p><b>Food 2:</b></p>
+  <input type="text" id="food2" name="food_2" />
+  <br>
+  <p><b>Food 3:</b></p>
+  <input type="text" id="food3" name="food_3" />
+  <br><br><br>
+  <input type="submit">
+</form>
+{% endblock %}
