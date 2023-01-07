@@ -13,3 +13,5 @@
 6 - Run -> flask --app app --debug run
 
 7 - Access running app in http://127.0.0.1:5000
+
+8 - View new record in test.csv
