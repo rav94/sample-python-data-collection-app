@@ -16,17 +16,21 @@
     </div>
   <br>
   <p><b>Your Name:</b></p>
-  <input type="text" id="yourName" name="your_name" />
+  <input class="form-input" type="text" id="yourName" name="your_name" />
   <br>
   <p><b>Food 1:</b></p>
-  <input type="text" id="food1" name="food_1" />
+  <input class="form-input" type="text" id="food1" name="food_1" />
   <br>
   <p><b>Food 2:</b></p>
-  <input type="text" id="food2" name="food_2" />
+  <input class="form-input" type="text" id="food2" name="food_2" />
   <br>
   <p><b>Food 3:</b></p>
-  <input type="text" id="food3" name="food_3" />
+  <input class="form-input" type="text" id="food3" name="food_3" />
   <br><br><br>
-  <input type="submit">
+  <input id="submitBtn" type="submit">
+  <br><br><br>
+  <div class="button-container"></div>
+    <a class="button" href="{{ url_for('data') }}">View Data</a>
+  </div>
 </form>
 {% endblock %}
